@@ -13,6 +13,10 @@ class PlikGłówny
 
         //wywolujemy metode wyswietlajaca tablice
     tablica.Wyswietl(tab);
+        //wywolujemy metiode wyswietlajaca tavlciue
+        tablica.SortujBabelkowo(tab);
+
+        tablica.Wyswietl(tab);
 
     }
 }
