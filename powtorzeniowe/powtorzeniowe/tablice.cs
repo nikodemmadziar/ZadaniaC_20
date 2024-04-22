@@ -6,15 +6,20 @@ using System.Threading.Tasks;
 
 namespace powtorzeniowe
 {
-   public class tablice
+   public class Tablice
     {
-        public void Wyswietl()
+        //tworzymy publiczne funkcje w skrypcie Tablice
+        public void Wyswietl(int[] tab)
         {
-            Console.WriteLine("to jest plik z tablicami");
+            for (int i = 0; i < tab.Length; i++)
+            {
+                Console.Write(tab[i]+ ", ");
+            }
         }
         public int[] Tworzenie_tablicy()
 
         {
+            //pobieramy dlugosc tablicy od uzytkownika
             Console.WriteLine("ile znakow ma miec tablica?");
             int dl = int.Parse(Console.ReadLine());
 

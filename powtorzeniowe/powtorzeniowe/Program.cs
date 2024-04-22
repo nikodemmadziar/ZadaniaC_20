@@ -6,16 +6,13 @@ class PlikGłówny
     static void Main(string[] args)
     {
         //zmienna ktora jest odwolaniem do innego skryptu
-        tablice tablice = new tablice();
+        Tablice tablica = new Tablice();
 
-        int[] tab = tablice.Tworzenie_tablicy();
+        //wywolujemy fynkcje tworzaca tablice
+        int[] tab = tablica.Tworzenie_tablicy();
 
-        for (int i = 0; i < tab.Length; i++)
-        {
-            Console.WriteLine(tab[i]);
-        }
-        
-
+        //wywolujemy metode wyswietlajaca tablice
+    tablica.Wyswietl(tab);
 
     }
 }
