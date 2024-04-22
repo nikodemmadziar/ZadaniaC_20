@@ -18,5 +18,15 @@ class PlikGłówny
 
         tablica.Wyswietl(tab);
 
+        bool przeszukanie = tablica.Przeszukaj(tab);
+        if (przeszukanie == true)
+        {
+            Console.WriteLine("liczba jest w tablicy");
+        }
+        else
+        {
+            Console.WriteLine("liczby nie ma w tablicy");
+        }
+
     }
 }

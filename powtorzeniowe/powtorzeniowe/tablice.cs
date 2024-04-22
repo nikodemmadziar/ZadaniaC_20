@@ -53,6 +53,23 @@ namespace powtorzeniowe
                 }
             }
                 }
+        public bool Przeszukaj(int[] tab)
+        {
+            Console.WriteLine("jakiej liczby szukasz w tablicy? ");
+            int szukana = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < tab.Length; i++)
+            {
+                if (tab[i] == szukana)
+                {
+                    return true;
+                }
+            }
+            return false;
+            
+
+            
+        }
             }
         }
     
